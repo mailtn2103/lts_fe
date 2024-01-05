@@ -13,8 +13,7 @@ import {
   Button,
 } from "reactstrap";
 import { Link } from "react-router-dom";
-
-const HomeNavbar = () => {
+const FeaturesNavbar = () => {
   const [dropdownOpen, setDropdownOpen] = React.useState(false);
 
   const toggleDropdown = () => {
@@ -24,10 +23,10 @@ const HomeNavbar = () => {
   return (
     <>
 
-    <Navbar className="mNav mt-2 small " expand="md">
-      <Nav>
+    <Navbar className="mNav mt-2" expand="md">
+      <Nav className="mx-auto">
         <NavItem>
-          <NavLink  to="/"
+          <NavLink to="/"
                   tag={Link}>HOME</NavLink>
         </NavItem>
         <UncontrolledDropdown nav inNavbar>
@@ -42,7 +41,7 @@ const HomeNavbar = () => {
             </DropdownItem>
             <DropdownItem>
               <NavLink href="#">Sidebar</NavLink>
-            
+              
             </DropdownItem>
             <DropdownItem>
               <NavLink href="#">Search Page</NavLink>
@@ -103,11 +102,11 @@ const HomeNavbar = () => {
           </DropdownMenu>
         </UncontrolledDropdown>
 
-        <NavbarBrand href="/" className="d-flex justify-content-center">
+        <NavbarBrand href="/" className=" m-auto d-flex justify-content-center">
           <img
-            src="https://inertiawp.com/demo/wp-content/uploads/sites/2/2022/08/logo.png"
+            src="https://inertiawp.com/lifestyle-mag/wp-content/uploads/sites/12/2022/08/logo-magazine.png"
             alt="Logo"
-            width={"23%"}
+            width={"45%"}
           />
         </NavbarBrand>
         <style>
@@ -152,7 +151,7 @@ const HomeNavbar = () => {
                     text-transform: uppercase;
                     letter-spacing: 1px;
                 }
-                .subscribe-wrapper {
+                .e-book-wrapper {
                     order: 5;
                     padding-left: 20px;
                     flex: 0 auto;
@@ -163,7 +162,7 @@ const HomeNavbar = () => {
                 }
                 .btn-border {
                     box-shadow: inset 0 0 0 1px;
-                    color: #312e81;
+                    color: #827055;
                 }
                 .nav-link{
                     color: #000;
@@ -172,7 +171,7 @@ const HomeNavbar = () => {
 
                 }
                 }
-                .btn-subscribe {
+                .btn-e-book {
                     cursor: pointer;
                     border-radius: black;
                     font-weight: 500;
@@ -194,34 +193,6 @@ const HomeNavbar = () => {
                 `}
         </style>
         <div className="right-wrapper d-flex justify-content-end ">
-          <div className="social-wrapper hide-xs">
-            <div className="social-icons">
-              <a
-                href="https://pinterest.com/"
-                title="Inertia Theme on Pinterest"
-                itemprop="url"
-                target="_blank"
-              >
-                <i className="fab fa-pinterest"></i>
-              </a>
-              <a
-                href="https://instagram.com/"
-                title="Inertia Theme on Instagram"
-                itemprop="url"
-                target="_blank"
-              >
-                <i className="fab fa-instagram"></i>
-              </a>
-              <a
-                href="https://twitter.com/"
-                title="Inertia Theme on Twitter"
-                itemprop="url"
-                target="_blank"
-              >
-                <i className="fab fa-twitter"></i>
-              </a>
-            </div>
-          </div>
           <div className="cart-wrapper hide-xs">
             <i class="fa fa-cart-plus" aria-hidden="true"></i>
           </div>
@@ -234,51 +205,21 @@ const HomeNavbar = () => {
               </span>
             </div>
           </div>
-          <div className="subscribe-wrapper hide-xs">
+          <div className="e-book-wrapper hide-xs">
             <Button
               outline
-              className=" cta-popup btn-subscribe btn-border letter-spacing-w"
+              className=" cta-popup btn-e-book btn-border text-uppercase letter-spacing-w"
             >
-              Subscribe
+              e-book
             </Button>
           </div>
         </div>
       </Nav>
     </Navbar>
     <hr/>
-    <Navbar expand="md" className="mNav navbar-with-shadow small">
-      <Nav className="mx-auto">
-        <NavItem >
-          <NavLink href="#" >TRENDING</NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink href="#">LIFESTYLE</NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink href="#">BEAUTY</NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink href="#">DECOR</NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink href="#">NUTRITION</NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink href="#">TRAVEL</NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink href="#">WELLBEING</NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink href="#">WORKOUT</NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink href="#">DIY</NavLink>
-        </NavItem>
-      </Nav>
-    </Navbar>
+    
     </>
   );
 };
 
-export default HomeNavbar;
+export default FeaturesNavbar;

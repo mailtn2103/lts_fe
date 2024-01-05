@@ -1,9 +1,14 @@
 import React from "react";
 import { Container, Row, Col, Card, Button } from "reactstrap";
+import Header from "../component/header/header";
+import Navbar from "../component/navbar/Navbar";
+import Footer from "../component/footer/Footer";
 
 const Home = () => {
   return (
     <div>
+      <Header />
+      <Navbar />
       <style>
         {`
                     .title-section {
@@ -141,10 +146,10 @@ const Home = () => {
         </Container>
       </div>
 
-      <div className="section-2 mt-5 mb-5">
+      <div className="section-2 mt-5 mb-5 ">
         <Container>
           <div className="row">
-            <div className="col-md-3">
+            <div className="col-md-3 col-sm-6">
               <Card
                 className=""
                 style={{ height: "95px", backgroundColor: "white" }}
@@ -179,7 +184,7 @@ const Home = () => {
               </Card>
             </div>
 
-            <div className="col-md-3">
+            <div className="col-md-3 col-sm-6">
               <Card
                 className=""
                 style={{ height: "95px", backgroundColor: "white" }}
@@ -203,7 +208,7 @@ const Home = () => {
                         style={{
                           fontSize: "12px",
                           marginLeft: "10px",
-                          marginTop: "30px",
+                          marginTop: "20px",
                           overflow: "hidden",
                           textOverflow: "ellipsis",
                           whiteSpace: "nowrap",
@@ -218,7 +223,7 @@ const Home = () => {
               </Card>
             </div>
 
-            <div className="col-md-3">
+            <div className="col-md-3 col-sm-6">
               <Card
                 className=""
                 style={{ height: "95px", backgroundColor: "white" }}
@@ -249,7 +254,7 @@ const Home = () => {
               </Card>
             </div>
 
-            <div className="col-md-3 rouded">
+            <div className="col-md-3 rouded col-sm-6">
               <Card
                 className=""
                 style={{ height: "95px", backgroundColor: "white" }}
@@ -293,7 +298,7 @@ const Home = () => {
       <div className="section-3">
         <Container>
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-md-6 col-sm-12">
               <div className="item-img card border-radius">
                 <img
                   style={{ height: "450px" }}
@@ -301,7 +306,7 @@ const Home = () => {
                 ></img>
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 col-sm-12">
               <div
                 className="text-block text-center text-dark"
                 style={{ marginTop: "100px" }}
@@ -337,7 +342,7 @@ const Home = () => {
             <div className="d-flex">
               <h2 className="mb-4">Home Decor</h2>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-3 col-sm-6">
               <div className="">
                 <img
                   src={`https://inertiawp.com/demo/wp-content/uploads/sites/2/2022/08/pexels-atbo-245208-1024x740.jpg`}
@@ -352,7 +357,7 @@ const Home = () => {
               </p>
             </div>
 
-            <div className="col-md-3">
+            <div className="col-md-3 col-sm-6">
               <div className="">
                 <img
                   src={`https://inertiawp.com/demo/wp-content/uploads/sites/2/2022/08/pexels-dmitry-zvolskiy-2062426-300x200.jpg`}
@@ -367,7 +372,7 @@ const Home = () => {
               </p>
             </div>
 
-            <div className="col-md-3">
+            <div className="col-md-3 col-sm-6">
               <div className="">
                 <img
                   src={`https://inertiawp.com/demo/wp-content/uploads/sites/2/2022/08/pexels-parth-shah-824197-300x225.jpg`}
@@ -382,7 +387,7 @@ const Home = () => {
               </p>
             </div>
 
-            <div className="col-md-3">
+            <div className="col-md-3 col-sm-6">
               <div className="">
                 <img
                   src={`https://inertiawp.com/demo/wp-content/uploads/sites/2/2022/08/pexels-daria-shevtsova-698170.jpg`}
@@ -481,7 +486,7 @@ const Home = () => {
             </p>
           </div>
           <div className="row">
-            <div className="col-md-3 ">
+            <div className="col-md-3 col-lg-3 col-sm-6">
               <div
                 className="shadow"
                 style={{ width: "300px", height: "480px" }}
@@ -491,7 +496,7 @@ const Home = () => {
                     src={`https://inertiawp.com/demo/wp-content/uploads/sites/2/2022/08/pexels-ann-poan-5797999.jpg`}
                     alt=""
                     className=""
-                    style={{ width: "300px", height: "320px" }}
+                    style={{ width: "100%", height: "320px" }}
                   />
                 </div>
 
@@ -528,7 +533,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="col-md-3 ">
+            <div className="col-md-3 col-lg-3 col-sm-6">
               <div
                 className="shadow"
                 style={{ width: "300px", height: "480px" }}
@@ -538,7 +543,7 @@ const Home = () => {
                     src={`https://inertiawp.com/demo/wp-content/uploads/sites/2/2022/08/pexels-karolina-grabowska-4041391.jpg`}
                     alt=""
                     className=""
-                    style={{ width: "300px", height: "320px" }}
+                    style={{ width: "100%", height: "320px" }}
                   />
                 </div>
 
@@ -575,7 +580,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="col-md-3 ">
+            <div className="col-md-3 col-lg-3 col-sm-6">
               <div
                 className="shadow"
                 style={{ width: "300px", height: "480px" }}
@@ -585,7 +590,7 @@ const Home = () => {
                     src={`https://inertiawp.com/demo/wp-content/uploads/sites/2/2022/08/pexels-karolina-grabowska-4202325.jpg`}
                     alt=""
                     className=""
-                    style={{ width: "300px", height: "320px" }}
+                    style={{ width: "100%", height: "320px" }}
                   />
                 </div>
 
@@ -622,7 +627,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="col-md-3 ">
+            <div className="col-md-3 col-lg-3 col-sm-6">
               <div
                 className="shadow"
                 style={{ width: "300px", height: "480px" }}
@@ -632,7 +637,7 @@ const Home = () => {
                     src={`https://inertiawp.com/demo/wp-content/uploads/sites/2/2022/08/pexels-karolina-grabowska-4202328.jpg`}
                     alt=""
                     className=""
-                    style={{ width: "300px", height: "320px" }}
+                    style={{ width: "100%", height: "320px" }}
                   />
                 </div>
 
@@ -675,47 +680,46 @@ const Home = () => {
         </Container>
       </div>
 
-      <div className="section-7 mt-5" style={{marginBottom: "100px"}}>
+      <div className="section-7 mt-5" style={{ marginBottom: "100px" }}>
         <Container>
           <div className="row" style={{ backgroundColor: "#f5f5f5" }}>
-            <div className="col-md-6">
-              <div className="p-5" style={{marginTop: '100px'}}>
+            <div className="col-md-6 col-sm-12">
+              <div className="p-5" style={{ marginTop: "100px" }}>
                 <h3>Get the latest!</h3>
                 <p>
                   Latest news and articles curated in your mailbox every week.
                   No Spam. Guaranteed.
                 </p>
-                  <div className="social-icons">
-                    <a
-                      href="https://pinterest.com/"
-                      title="Inertia Theme on Pinterest"
-                      itemprop="url"
-                      target="_blank"
-                    >
-                      <i className="fab fa-pinterest"></i>
-                    </a>
-                    <a
-                      href="https://instagram.com/"
-                      title="Inertia Theme on Instagram"
-                      itemprop="url"
-                      target="_blank"
-                    >
-                      <i className="fab fa-instagram"></i>
-                    </a>
-                    <a
-                      href="https://twitter.com/"
-                      title="Inertia Theme on Twitter"
-                      itemprop="url"
-                      target="_blank"
-                    >
-                      <i className="fab fa-twitter"></i>
-                    </a>
-                  </div>
+                <div className="social-icons">
+                  <a
+                    href="https://pinterest.com/"
+                    title="Inertia Theme on Pinterest"
+                    itemprop="url"
+                    target="_blank"
+                  >
+                    <i className="fab fa-pinterest"></i>
+                  </a>
+                  <a
+                    href="https://instagram.com/"
+                    title="Inertia Theme on Instagram"
+                    itemprop="url"
+                    target="_blank"
+                  >
+                    <i className="fab fa-instagram"></i>
+                  </a>
+                  <a
+                    href="https://twitter.com/"
+                    title="Inertia Theme on Twitter"
+                    itemprop="url"
+                    target="_blank"
+                  >
+                    <i className="fab fa-twitter"></i>
+                  </a>
+                </div>
               </div>
             </div>
             <style>
-                {
-                    `
+              {`
                     .form-block {
                         margin: 100px 35px 0 0;
                         text-align: right;
@@ -735,11 +739,10 @@ const Home = () => {
                         font-weight: 500;
                         padding: 12px 24px;
                     }
-                    `
-                }
+                    `}
             </style>
-            <div className="col-md-6">
-              <div class="form-block p-5">
+            <div className="col-md-6 col-sm-12">
+              <div class="form-block p-5 d-flex">
                 {" "}
                 <form
                   action="https://inertiawp.com/demo"
@@ -767,6 +770,7 @@ const Home = () => {
           </div>
         </Container>
       </div>
+      <Footer />
     </div>
   );
 };

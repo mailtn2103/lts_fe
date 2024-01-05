@@ -1,0 +1,202 @@
+.section-title {
+  text-align: center;
+}
+.item-image {
+  position: relative;
+}
+.image-gradient-overlay:before {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.6) 20%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.item-image img {
+  vertical-align: middle;
+}
+.cat {
+  background-color: #827055;
+  color: #fff;
+  display: inline-block;
+  margin: 0;
+  padding: 8px 16px;
+  position: relative;
+  bottom: 20px;
+}
+.cat {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08rem;
+}
+.item-title {
+  font-size: 1.2rem;
+  color: black;
+}
+.resized-image {
+  object-fit: cover;
+  object-position: center;
+}
+
+/* section */
+.podcarst {
+  background-color: #e4e2dd;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Playfair Display;
+  font-weight: 600;
+}
+.excerpt {
+  opacity: 0.7;
+}
+.line-clamp {
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
+}
+.editorial-readmore {
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding-top: var(--spacing-l);
+}
+.text-block {
+  margin-top: 170px;
+  margin-left: 25px;
+}
+
+/* section3 */
+.wakeup1 {
+  background-image: url("https://inertiawp.com/lifestyle-mag/wp-content/uploads/sites/12/2022/08/pexels-madison-inouye-2622187.jpg");
+  background-position: center;
+  width: 100%;
+  height: 380px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.wakeup1::before {
+  background: rgba(0, 0, 0, 0.4);
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.text-block a {
+  color: #fff;
+}
+.text-block {
+  /* padding-top: 130px; */
+}
+.wakeup .btn {
+  box-shadow: inset 0 0 0 2px;
+  border-radius: 0;
+  margin-top: var(--spacing-m);
+}
+.wakeup .btn:hover {
+  background-color: #fff;
+  border: black;
+  color: black;
+}
+
+.rouded{
+  box-shadow: inset 0 0 0 2px;
+  border-radius: 7px;
+  color: white;
+  border: #fff;
+  margin-top: var(--spacing-m);
+  background-color: #000;
+}
+.rouded:hover {
+  background-color: #fff;
+  border: #000;
+  color: black;
+}
+.shop{
+  box-shadow: inset 0 0 0 2px;
+  color: black;
+  border: #000;
+  margin-top: var(--spacing-m);
+  background-color: #fff;
+}
+.shop:hover{
+  background-color: #000;
+  border: #fff;
+  color: white;
+}
+/* section4 */
+.section-title {
+  text-align: left;
+}
+.section-title {
+  font-size: 3rem;
+}
+.item-text {
+  background: #fff;
+  padding: 0 24px 24px;
+}
+.life {
+  color: #827055;
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-top: var(--spacing-m);
+}
+h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.excerpt {
+  font-size: 0.85rem;
+  color: #525252;
+  text-align: justify;
+  margin-top: var(--spacing-s);
+}
+.loop-meta {
+  color: #737373;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 2.5;
+  margin-top: var(--spacing-s);
+}
+.meta-item {
+  display: inline-block;
+  margin-right: var(--spacing-s);
+}
+.loop-meta i {
+  margin-right: 8px;
+}
+.loop-readmore:after {
+  content: "\f006";
+  font: 80% mnmld-icons;
+  margin-left: 12px;
+}
+
+/* section5 */
+.productwelove{
+    background-color: #e4e2dd;
+}
+
+/* section6 */
+.block-wrapper {
+    background: #827055;
+    padding: 80 0 80 0px;
+}
+.form-block {
+    text-align: right;
+    position: relative;
+}
+
+
